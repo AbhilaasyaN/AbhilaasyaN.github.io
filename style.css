@@ -1,0 +1,11 @@
+/*selecting everything to apply styling to*/
+*{
+    /*setting margin, sizing, overall basic structure of website styling.*/
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins';
+    text-decoration: none;
+    scroll-behavior: smooth; 
+    list-style: none;
+}
