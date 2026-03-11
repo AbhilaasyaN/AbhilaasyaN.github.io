@@ -1,34 +1,70 @@
-<!--boiler plate created using !-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Portfolio Website" content="width=device-width, initial-scale=1.0"> <!--renamed to portfolio-->
-    <!--link style sheet-->
-    <link rel="stylesheet" href="style.css">
-    <!--adding font style sheet to use icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhilaasya Nallamalli | Engineering Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #FDFBF7; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        
+        /* The "Jali" (Lattice) Background Pattern */
+        .jali-bg {
+            background-color: #fdfbf7;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c5a059' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.446 9.998c-2.903-.706-5.292-2.49-6.84-4.735l1.644-1.145c1.233 1.774 3.13 3.193 5.432 3.753l-.236 2.127zM8 46c0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6zm23.993-19.128l1.728 1.015c-1.396 2.376-3.79 4.316-6.721 5.215l-.579-1.914c2.333-.715 4.238-2.26 5.572-4.316z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
 </head>
-<body>
+<body class="jali-bg min-h-screen text-slate-800">
 
-    <!--creating the header-->
-    <header class = "header"> <!--header with class name header-->
-            <!--adding alogo-->
-            <a href="#" class = "logo"><span>Abhilaasya Nallamalli</span></a> <!--span is styled so text can have gradient affect-->
+    <header class="py-20 px-6 text-center border-b-4 border-[#C5A059]">
+        <h1 class="text-6xl text-[#1A237E] mb-2">Abhilaasya Nallamalli</h1>
+        <p class="text-sm tracking-[0.3em] uppercase text-[#C5A059] font-semibold">Electronics Systems Engineering • Texas A&M</p>
+    </header>
 
-            <!--creating an unordered list for each -->
+    <main class="max-w-6xl mx-auto py-16 px-6">
+        <h2 class="text-3xl text-[#1A237E] mb-10 border-l-4 border-[#C5A059] pl-4">Selected Works</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <div class="bg-white p-1 border-2 border-[#C5A059] shadow-xl group hover:-translate-y-2 transition-transform">
+                <div class="border border-[#C5A059] p-8 h-full">
+                    <span class="text-xs font-bold text-[#C5A059] tracking-widest uppercase">Hardware Track Winner • TAMUhack</span>
+                    <h3 class="text-3xl font-serif text-[#1A237E] mt-3 mb-4">Celcii Pixipen</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        A wireless gyroscopic air pen designed for seamless interaction. Built using an <strong>ESP32</strong> and <strong>IMU sensors</strong>, demonstrating advanced firmware integration.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-[#FDFBF7] border border-[#C5A059] text-[10px] text-[#1A237E] font-bold">EMBEDDED C</span>
+                        <span class="px-3 py-1 bg-[#FDFBF7] border border-[#C5A059] text-[10px] text-[#1A237E] font-bold">PCB DESIGN</span>
+                        <span class="px-3 py-1 bg-[#FDFBF7] border border-[#C5A059] text-[10px] text-[#1A237E] font-bold">FIRMWARE</span>
+                    </div>
+                </div>
+            </div>
 
+            <div class="bg-white p-1 border-2 border-[#C5A059] shadow-xl group hover:-translate-y-2 transition-transform">
+                <div class="border border-[#C5A059] p-8 h-full">
+                    <span class="text-xs font-bold text-[#C5A059] tracking-widest uppercase">AI & Data Science</span>
+                    <h3 class="text-3xl font-serif text-[#1A237E] mt-3 mb-4">ML Insights</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Explorations in modern machine learning from <strong>IIIT Hyderabad</strong>, focusing on neural network optimization and predictive modeling.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-[#FDFBF7] border border-[#C5A059] text-[10px] text-[#1A237E] font-bold">PYTORCH</span>
+                        <span class="px-3 py-1 bg-[#FDFBF7] border border-[#C5A059] text-[10px] text-[#1A237E] font-bold">PYTHON</span>
+                        <span class="px-3 py-1 bg-[#FDFBF7] border border-[#C5A059] text-[10px] text-[#1A237E] font-bold">AUTOMATION</span>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </main>
 
+    <footer class="text-center py-10 opacity-50 text-xs tracking-widest text-[#1A237E]">
+        &copy; 2026 ABHILAASYA NALLAMALLI • ENGINEERED WITH PRECISION
+    </footer>
 
-
-        </header>
-
-
-
-    <!--open script-->
-    <script src="script.js"></script>
-    
 </body>
 </html>
