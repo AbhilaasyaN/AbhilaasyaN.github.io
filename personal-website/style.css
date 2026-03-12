@@ -1,0 +1,47 @@
+/*adding necessary fonts*/
+@font-face{
+    font-family: 'Chomsky';
+    src: url('fonts/Chomsky.woff2') format('woff2'); /*downloaded font chomsky*/
+    /*text settings*/
+    font-weight: normal; 
+    font-style: normal;
+}
+/*header title*/
+.masthead-title{
+    font-family: 'Chomsky', serif;
+    font-size: 5rem; 
+    border-bottom: 4px double #2b2b2b; 
+    padding-bottom: 10px; 
+    margin-bottom: 5px;
+}
+/*selecting everything to apply styling to*/
+*{
+    /*setting margin, sizing, overall basic structure of website styling.*/
+    /*global reset settings*/
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    scroll-behavior: smooth; 
+    list-style: none;
+}
+
+
+    /*for background color, make it : #f4f1ea (newspaper color)*/
+    /*text color: #2b2b2b*/
+    /*page-wide settings like backgrounds and fonts*/
+body{
+    background-color: #f4f1ea;
+    color: #2b2b2b;
+    font-family: 'Lora','serif', 'Chomsky', sans-serif; /*common newspaper fonts*/
+    line-height: 1.6; /*for easier readability*/
+}
+
+
+    /*using columns to make easy reading*/
+.article-body{
+    column-count: 2;
+    column-gap: 2rem; 
+    column-rule: 1px solid rgba(0,0,0,0.1); /*adding thin line between columns*/
+    text-align: justify; /*makes lines reach both ends of column, justified spacing*/
+    }
